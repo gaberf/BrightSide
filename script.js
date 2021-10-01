@@ -4,7 +4,7 @@ let weather = {
 
     setWeather: function (city) {
         fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
         )
         .then((response) => response.json())
         .then((data) => this.setVarsAndDisplay(data));
@@ -19,9 +19,9 @@ let weather = {
     
         const tempInFar = this.kelvinToFar(temp);
     
-        //document.getElementById('city').innerHTML = `Weather in ${name}:`
-        //document.getElementById('temp').innerHTML = `Temperature: ${tempInFar}°F`
-        //document.getElementById('conditions').innerHTML = `Current conditions: ${description}`
+        document.getElementById('city').innerHTML = `Weather in ${name}:`
+        document.getElementById('temp').innerHTML = `Temperature: ${tempInFar}°F`
+        document.getElementById('conditions').innerHTML = `Current conditions: ${description}`
     },
     
     
