@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#navbar-container {
+    padding: 10px;
+    min-height: 35px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 0;
+}
+
+
+#title {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
+#search {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#credit {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+    text-align: right;
+}
+
+#city-search {
+    height: 30px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: white;
+}
+
+#city {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 20px;
+    margin-top: -35px;
+}
+
+#temp {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-top: -20px;
+}
+
+#search-btn {
+    width: 33px;
+    height: 33px;
+    margin: none;
+    font-size: 15px;
+    padding-top: 1px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+
+#logo-img {
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+
+#search-btn:hover {
+    background-color: lightgray;
+}
+
+#autoloc-btn:hover {
+    background-color: lightgray;
+}
+
+#autoloc-btn {
+    width: 33px;
+    height: 33px;
+    margin: none;
+    font-size: 15px;
+    padding-top: 1px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+
+#loading {
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    opacity: 0%;
+}
+
+#cond-img {
+    width: 250px;
+    height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#loc-error {
+    opacity: 0%;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+}
+
+#content {
+    color: white;
+}
+
+.nightBg {
+    background-image: url(https://papers.co/wallpaper/papers.co-mg92-night-sky-wide-mountain-star-shining-nature-35-3840x2160-4k-wallpaper.jpg);
+    background-size: cover;
+}
+
+.dayBg {
+    background-size: cover;
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/white-clouds-cumulus-on-blue-sky-panoramic-images.jpg);
+}

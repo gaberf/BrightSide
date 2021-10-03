@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <label for="city-search">City:</label>
-    <input name="city-search" type="text" id="city-search" placeholder="ex: New York City">
-    <button onclick="search()">Search!</button>
-    
-    <hr>
-    <h1 id="city">City loading...</h1>
-    <p id="temp">Temp loading...</p>
-    <p id="conditions">Conditions loading...</p>
-    <p>(Nowhere close to finished website, just a test to see if weather data is working)</p>
+    <div id="navbar-container">
+        <div id="title">
+            <img src="https://i.ibb.co/6XDjv8y/Screenshot-2021-10-02-185606.png" id="logo-img">
+            <p>WeatherSpot</p>
+        </div>
+        
+        <div id="search">
+            <button onclick="getByCoords()" id="autoloc-btn">&#128205</button>
+            <input class="search-bar" name="city-search" type="text" id="city-search" placeholder=" Search Weather by City or ZIP Code">
+            
+            <button onclick="search()" id="search-btn">&#128269</button>
+            
+            <!--<button onclick="search()" id="search-btn">Go</button>-->
+        </div>
+
+        <div id="credit">
+            <p>v1.0.0</p>
+        </div>
+    </div>
+    <div id="content">
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/578/578116.png" id="cond-img">
+        <h1 id="city">City loading...</h1>
+        <p id="temp">Temp loading...</p>
+        <p id="conditions">Conditions loading...</p>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <img src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" id="loading">
+    <p id="loc-error">&#9888 WeatherSpot cannot access your location.</p>
     <script src="script.js"></script>
 </body>
 </html>
